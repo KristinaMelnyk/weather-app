@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="contant">
+      <header>
+        <div class="city-list">
+          <div class="row">
+            <div class="col">London</div>
+            <div class="col">New York</div>
+            <div class="col">Barcelona</div>
+            <div class="col">Paris</div>
+          </div>
+        </div>
+        <form>
+          <input type="text" class="enter-city" placeholder="Enter a city" />
+          <input
+            type="submit"
+            class="btn btn-success search-button"
+            value="Search"
+          />
+          <input
+            type="submit"
+            class="btn btn-success current-button"
+            value="Current"
+          />
+        </form>
+      </header>
+      <section>
+        <h1 class="city">Kyiv</h1>
+        <p class="date">Tuesday 13:17</p>
+        <p class="description">Partly Cloudy</p>
+        <span class="emoji">🌥️</span>
+        <span class="temperature">+20℃</span>
+        
+      </section>
+      <div class="additional-description">
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
