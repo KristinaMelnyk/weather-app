@@ -1,0 +1,84 @@
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.emoji {
+  font-size: 50px;
+}
+
+.temperature {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.additional-description {
+  margin: 0 auto;
+  position: relative;
+  left: 400px;
+  bottom: 80px;
+  font-size: 18px;
+}
+
+.city-list {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #ff822d;
+}
+
+.city-list:hover {
+  cursor: pointer;
+}
+
+.enter-city {
+  border: 2px solid green;
+  padding: 10px 30px;
+}
+.search-button {
+  margin-left: 15px;
+  vertical-align: top;
+  padding: 10px 20px;
+}
+
+.current-button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  vertical-align: top;
+  background-color: rgb(66, 62, 181);
+}
+
+.current-city {
+  font-size: 30px;
+}
+
+.sun-time {
+  position: relative;
+  left: 120px;
+}
+
+.days {
+  margin: 20px auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contant {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 30px 60px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  font-family: "Leckerli One", cursive;
+  font-family: "Roboto", sans-serif;
+}
