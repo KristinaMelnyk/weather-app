@@ -82,3 +82,9 @@ p {
   font-family: "Leckerli One", cursive;
   font-family: "Roboto", sans-serif;
 }
+
+.foot-link {
+  position: fixed;
+  left: 370px;
+  font-size: 18px;
+}
