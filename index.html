@@ -23,15 +23,6 @@
   <link rel="stylesheet" href="styles.css" />
   <body>
     <div class="contant">
-      <header>
-        <div class="city-list">
-          <div class="row">
-            <div class="col">London</div>
-            <div class="col">New York</div>
-            <div class="col">Barcelona</div>
-            <div class="col">Paris</div>
-          </div>
-        </div>
         <form>
           <input type="text" class="enter-city" placeholder="Enter a city" />
           <input
@@ -39,30 +30,38 @@
             class="btn btn-success search-button"
             value="Search"
           />
-          <input
-            type="submit"
-            class="btn btn-success current-button"
-            value="Current"
-          />
         </form>
-      </header>
-      <section>
-        <h1 class="city">Kyiv</h1>
-        <p class="date">Tuesday 13:17</p>
-        <p class="description">Partly Cloudy</p>
-        <span class="emoji">🌥️</span>
-        <span class="temperature">+20℃</span>
-        
-      </section>
-      <div class="additional-description">
-        <ul>
-          <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> km/h</li>
-        </ul>
+      <h1>New York</h1>
+      <ul>
+        <li>
+          Friday 05:00
+        </li>
+        <li>
+          Clear
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear">
+          12 ℃ | ℉
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>
+              Preciptation: 0%
+            </li>
+            <li>
+              Humidity: 73%
+            </li>
+            <li>
+              Wind: 2 km/h
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <p class="foot-link"> <a href="https://github.com/KristinaMelnyk/weather-app" target="_blank">Open-source code</a> by Kris Melnyk</p>
+      <small>
+        <a href="https://github.com/KristinaMelnyk/weather-app" target="_blank">Open-source code</a> , by Khrystyna Melnyk
+      </small>
     <script src="script.js"></script>
   </body>
 </html>
