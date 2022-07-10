@@ -2,15 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.contant {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: aliceblue;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-
 h1 {
   font-size: 36px;
   font-weight: 100;
@@ -29,6 +20,43 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+
+.image {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  top: -16px;
+}
+
+.col-6 {
+  margin-top: 20px;
+}
+
+.col-6 strong {
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.col-6 .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contant {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 .enter-city {
