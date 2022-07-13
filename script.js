@@ -1,5 +1,5 @@
 let now = new Date();
-let date = document.querySelector(".date");
+let date = document.querySelector("#date");
 let days = [
   "Sunday",
   "Monday",
@@ -17,13 +17,14 @@ date.innerHTML = `${day},  ${hour}:${minutes}`;
 
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector(".temperature").innerHTML = Math.round(
+  document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
-  document.querySelector(".description").innerHTML =
-    response.data.weather[0].main;
 }
 
 function searchCity(event) {
