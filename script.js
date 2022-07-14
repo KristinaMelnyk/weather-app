@@ -56,3 +56,5 @@ function handleSubmit(event) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
+
+search("Kyiv");
