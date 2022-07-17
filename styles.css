@@ -68,3 +68,18 @@ li {
   vertical-align: top;
   padding: 10px 20px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
