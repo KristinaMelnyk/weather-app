@@ -22,6 +22,10 @@ li {
   line-height: 19px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .image {
   height: 64px;
   width: 64px;
@@ -54,32 +58,34 @@ li {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: aliceblue;
+  background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
 
 .enter-city {
   border: 2px solid green;
-  padding: 10px 30px;
+  padding: 10px 55px;
 }
 .search-button {
   margin-left: 15px;
-  vertical-align: top;
+  vertical-align: center;
   padding: 10px 20px;
 }
 
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-
 }
 
 .weather-forecast-date {
   font-size: 16px;
-
 }
 
-.weather-forecast-temperature {
-  font-size: 13px;
+.weather-forecast-temperature-min {
+  opacity: 0, 6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 14px;
 }
