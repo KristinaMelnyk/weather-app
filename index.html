@@ -1,69 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>WeatherApp</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <link rel="stylesheet" href="styles.css" />
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="weather-app">
-      <div class="contant">
-        <form>
-          <input type="text" class="enter-city" placeholder="Enter a city" />
-          <input
-            type="submit"
-            class="btn btn-success search-button"
-            value="Search"
-          />
-        </form>
-        <h1>New York</h1>
-        <ul>
-          <li id="date"> Friday 05:00</li>
-          <li id="description">Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              class="image"
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="Clear"
-              id="icon"
-            />
-            <strong id="temperature">12</strong>
-            <span class="units">℃</span>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
-          </div>
+        <div class="search-bar">
+            <input type="text" id="city-input" class="search-input" placeholder="Enter city name">
+            <button id="search-btn" class="search-btn">Search</button>
         </div>
-        <div class="weather-forecast" id="forecast">
-</div>
-       </div>
-       <small>
-        <a href="https://github.com/KristinaMelnyk/weather-app" target="_blank"
-          >Open-source code</a
-        >
-        , by Khrystyna Melnyk
-      </small>
+        <div class="card" id="weather-card"></div>
+        <div class="error-msg" id="error-msg"></div>
+    </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
